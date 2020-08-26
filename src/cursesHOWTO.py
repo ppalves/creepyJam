@@ -1,7 +1,6 @@
 import time
 import curses
 import os
-from curses import wrapper
 
 # writes a string to a window with delay between chars
 def textStream(text, window):
@@ -40,7 +39,7 @@ def main(stdscr):
     # waits for keyboard
     stdscr.getkey()
 
-wrapper(main)
+curses.wrapper(main)
 
 
 #if __name__=="__main__":
